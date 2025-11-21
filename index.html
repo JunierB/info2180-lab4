@@ -1,17 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Superheroes Search</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avengers Character Search</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<main>
-    <h1>Superheroes</h1>
-    <button id="searchBtn" type="button">Search</button>
-</main>
+  <header class="site-header">
+    <h1>Avengers Character Search</h1>
+    <img src="avengerlogo.jpg" alt="Avengers logo" class="site-logo" />
+  </header>
 
-<script src="app.js"></script>
+  <main>
+    <h2>Superheroes</h2>
+    <div class="search-row">
+      <input id="search-input" type="text" placeholder="Enter superhero name or alias" />
+      <button id="search-btn" type="button">Search</button>
+    </div>
+
+    <div id="result" aria-live="polite"></div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
